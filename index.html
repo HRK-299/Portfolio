@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal Portfolio Website using HTML, CSS, JavaScript By Harsh Gaur!!"
+    />
+    <title>Portfolio Website: Harsh Gaur</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/eb8afed685.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#Home"><img src="Images/logo.jpeg" class="logo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <div class="name">
+      <div class="container">
+        <div class="header-text">
+          <h1>Hi, I'm <span>Harsh Gaur</span></h1>
+          <p>Aspiring Web-Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Profile Pic.jpg" alt="userImage" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, My name is <em>Harsh Gaur</em> and I am a Student at VIT,
+              Bhopal. I am passionate about coding and development and I am
+              always eager to learn new technologies and techniques. Through
+              this portfolio, I showcase some of my past and current projects as
+              well as my skills and experiences. Please feel free to contact me
+              for any opportunities.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certifications
+              </p>
+              <p class="tab-links" onclick="opentab('hobby')">Hobbies & Languages</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                  <li>
+                    <span>2020-current</span><br />B.tech CSE Core at VIT, Bhopal<br/><b>Grade:</b> 8.42CGPA
+                  </li>
+                  <li>
+                    <span>2018-2020</span><br />Secondary School at GN National Public School
+                    School, UP<br/><b>12th Grade:</b> 81.6%
+                  </li>
+                  <li>
+                    <span>Till 2018</span><br />High School at The Pillars Public School
+                    School, UP<br/><b>10th Grade:</b> 88.4%
+                  </li>
+                </ul>
+              </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li><span>Data Analytics</span><br />Fundamentals of Data Analytics, Futureskills prime.</li>
+                <li>
+                  <span>Data Science</span><br />Microlearning Course in Data Science, Board Infinity.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobby">
+              <ul>
+                <li>
+                  <span>Hobbies</span><!--<br />B.tech CSE Core at VIT, Bhopal--><br/>Beatboxing<br/>Professional Gaming
+                </li>
+                <li>
+                  <span>Languages Known</span><br />English<br/>Hindi
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Web Design</h2>
+            <p>
+              <h5>I Work on MERN stack . I have Projects listed below:<br/></h5>
+              <li><b>Welcoming Paws</b> using MERN which is currently under development.<br/></li>
+              <li><b>Face Detection Attendance System</b> Made using open Cv and Python.<br/></li>
+
+            </p>
+            <a href="https://github.com/HRK-299" target = "_blank"class="btn btn2">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Technical Knownledge</h2>
+            <p>
+              <li>C++</li>
+              <li>Java</li>
+              <li>React.js</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+            </p>
+            <!-- <a href="#" class="btn btn2">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Problem Solving</h2>
+            <p>
+              <h3>Leetcode:<br/></h3>
+              Questions Solved: 50 and counting<br/>
+              <h3>HackerRank:<br/></h3>
+              <li>3 Star Problem Solving<br/></li>
+              <li>3 Star Java<br/></li>
+              <li>3 Star Python<br/></li>
+              <li>30 Days Of Code<br/></li>
+            </p>
+            <a href="https://leetcode.com/Harsh-g30/" target="_blank" class="btn btn2"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work1.png" alt="Project Image" />
+            <div class="layer">
+              <h3>Mern Website (Under Development)</h3>
+              <p>
+                Full stack web development.
+              </p>
+              <a href="https://github.com/Aryanmehta21/food_ordering_cafe_Panda" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work_2.1.png" alt="Project Image" />
+            <div class="layer">
+              <h3>Welcoming Paws – A Street Dog Initiative</h3>
+              <p>
+                Identifying and helping street dogs by providing them with food, shelter and creating awareness and
+                Raising funds with the help of our website.
+              </p>
+              <a href="https://github.com/HRK-299/Welcoming-Paws..git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="Project Image" />
+            <div class="layer">
+              <h3>Python Project</h3>
+              <p>
+                Solved the issue of proxy faced by teacher during attendance. With the help of this, students need to scan their face in front of camera to get the attendance
+              </p>
+              <a
+                href="https://github.com/HRK-299/FACE-RECOGNITION-BASED-ATTENDANCE-MONITORING-SYSTEM.git"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/HRK-299" target="_blank" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>harsh1190.gaur@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+917084330797</p>
+            <h3>Profiles</h3>
+            <div class="social-icons">
+              <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+              <a
+                href="https://www.linkedin.com/in/harsh-g30/"
+                target="_blank"
+                ><!--<i class="fa-brands fa-linkedin"></i
+              >-->
+                <img src="Images/l1.svg" alt="" class="image"
+              /></a>
+              <a href="https://github.com/HRK-299" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <!-- <a href="https://www.instagram.com/harsh_g_30/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a> -->
+              <a href="https://leetcode.com/Harsh-g30/" target="_blank"
+                ><img src="Images/leet3.png" alt="" class="image"
+              /></a>
+              <a href="https://www.hackerrank.com/HARSH_G" target="_blank"
+                ><img src="Images/h1.svg" alt="" class="image"
+              /></a>
+            </div>
+            <a href="Resume (Harsh 20BCE10299)..pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+            <a
+              href="https://linktr.ee/aryan2102"
+              target="_blank"
+              class="btn btn3"
+              >Other Links</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <sup>&copy;</sup> Harsh Gaur</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      window.addEventListener("focus", () => {
+        document.title = docTitle;
+      });
+    </script>
+  </body>
+</html>
